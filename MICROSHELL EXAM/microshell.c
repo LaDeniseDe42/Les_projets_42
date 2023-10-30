@@ -6,7 +6,7 @@
 /*   By: qdenizar <qdenizar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 09:11:01 by qdenizar          #+#    #+#             */
-/*   Updated: 2023/08/22 09:13:53 by qdenizar         ###   ########.fr       */
+/*   Updated: 2023/10/30 14:20:58 by qdenizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
+#include <sys/wait.h>
 
 void    write_message(char *message)
 {
@@ -76,7 +77,6 @@ int exec(char **argv, int i, int j, char **env)
         return(1);
     }
     return(WIFEXITED(status) && WEXITSTATUS(status));
-
 }
 
 int main(int argc, char **argv, char **env)
