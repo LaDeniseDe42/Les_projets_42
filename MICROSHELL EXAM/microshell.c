@@ -6,7 +6,7 @@
 /*   By: qdenizar <qdenizar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/21 09:11:01 by qdenizar          #+#    #+#             */
-/*   Updated: 2023/10/30 14:20:58 by qdenizar         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:38:58 by qdenizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ int main(int argc, char **argv, char **env)
     int j = 0;
     int i = 0;
     int status = 0;
-
+ 
     (void)argc;
     while(argv[i] && argv[++i])
     {
